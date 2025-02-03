@@ -3,11 +3,55 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: rgb(219, 13, 13);
+  --background-light:#202020;
+  --background: #171717;
+  --background-dark:#010101;
+  --foreground: #ffffff;
+  --primary: rgb(172, 21, 21);
+  --primary-light:rgb(240, 31, 31);
+  --primary-dark:rgb(120, 11, 11);
 }
 
+.main{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*inicio navbar*/
+.navbar{
+  background-image: linear-gradient(to right, var(--background-dark), var(--background-light));
+}
+
+.navbar li{
+  padding-left: 20px;
+  padding-top:15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  padding-right: 20px;
+}
+
+.navbar li:hover{
+  background-color: var(--primary);
+  animation: FadeIn 0.09s ease-in-out 1;
+}
+
+@keyframes FadeIn {
+  from {
+    background-image: linear-gradient(to right, var(--primary-dark), var(--background));
+  }
+  to {
+    background-image: linear-gradient(to right, var(--primary-light), var(--primary));
+  }
+}
+
+.navbar ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/*fim navbar*/
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
