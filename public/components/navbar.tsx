@@ -13,10 +13,10 @@ export default function Navbar() {
                         style={{width: "200px", height: "90px"}}
                     />
                 </li>
-                <li>Home</li>
-                <li>Loja</li>
-                <li>Serviços</li>
-                <li>Sobre mim</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre nós</a></li>
             </ul>
         </div>
     )
