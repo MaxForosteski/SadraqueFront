@@ -53,6 +53,19 @@
   list-style: none;
 }
 /*fim navbar*/
+
+/*Inicio Intro*/
+
+.carro-intro{
+  background-image: linear-gradient(to right, var(--primary-dark), var(--primary));
+  padding: 20px;
+  width: 50%;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*Fim intro*/
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
