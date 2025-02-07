@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background-light:#202020;
-  --background: #171717;
-  --background-dark:#010101;
+  --background-lighter:#E0E0E0;
+  --background-light:#333333;
+  --background: #1C1C1C;
+  --background-dark:#000000;
   --foreground: #ffffff;
-  --primary: rgb(172, 21, 21);
-  --primary-light:rgb(240, 31, 31);
+  --primary: #D90429;
+  --primary-light:#FF2020;
   --primary-dark:rgb(120, 11, 11);
 }
 
