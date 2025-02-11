@@ -100,8 +100,9 @@ body {
 .carro-intro{
   border: 5px solid var(--primary);
   border-radius: 10px; 
-  width: 50%;
+  width: 45%;
   animation: FadeInIntro 1s ease-in-out 1;
+  margin: 10px;
 }
 
 .button-contato-intro{
