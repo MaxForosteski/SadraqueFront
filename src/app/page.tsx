@@ -7,6 +7,7 @@ export default function Home() {
     <div className="main">
       <Navbar />
       <Intro />
+      <a href="https://www.flaticon.com/br" title="whatsapp ícones">Freepik - Flaticon</a>
     </div>
   );
 }
