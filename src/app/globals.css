@@ -11,6 +11,7 @@
   --primary: #D90429;
   --primary-light:#FF2020;
   --primary-dark:rgb(120, 11, 11);
+  --text-highlight:#32CD32;
 }
 
 .main{
@@ -56,16 +57,43 @@
 
 /*Inicio Intro*/
 
+.text-intro{
+  font-size: 22px;
+  color: var(--foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 .carro-intro{
   background-image: linear-gradient(to right, var(--primary-dark), var(--primary));
+  display: flex;
+  justify-content: flex-end;
   padding: 20px;
   width: 50%;
-  border-radius: 20px;
+  height: 400px;
+  
+    
+    padding: 10px 20px;
+    
+    
+    position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 /*Fim intro*/
+
+/*Common inicio*/
+.text-highlight{
+  color: var(--text-highlight);
+  font-weight: bold;
+}
+/*Common fim*/
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
