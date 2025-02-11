@@ -2,9 +2,8 @@ import Image from "next/image"
 
 export default function Navbar() {
     return (
-        <div className="navbar">
+        <div className="navbar pt-10 pb-10 text-xl">
             <ul>
-                <li>
                     <Image
                         src={"/images/Sadraque-logo.jpg"}
                         alt="Sadraque Auto center"
@@ -12,7 +11,6 @@ export default function Navbar() {
                         height={1000}
                         style={{width: "200px", height: "90px"}}
                     />
-                </li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Loja</a></li>
                 <li><a href="#">Serviços</a></li>

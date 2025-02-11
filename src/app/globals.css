@@ -19,9 +19,22 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background-page);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /*inicio navbar*/
 .navbar{
-  background-image: linear-gradient(to right, var(--background-dark), var(--background-light));
+  background-image: linear-gradient(to right, var(--background-dark), var(--background));
 }
 
 .navbar li{
@@ -76,7 +89,7 @@
 }
 
 .carro-intro{
-  border: 3px dashed var(--primary);
+  border: 5px solid var(--primary);
   border-radius: 10px; 
   width: 50%;
 }
@@ -89,15 +102,3 @@
   font-weight: bold;
 }
 /*Common fim*/
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background-page);
-  font-family: Arial, Helvetica, sans-serif;
-}
