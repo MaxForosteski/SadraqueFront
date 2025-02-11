@@ -89,10 +89,19 @@ body {
   margin: 30px;
 }
 
+.intro-title{
+  animation: FadeInIntro 0.5s ease-in-out 1;
+}
+
+.intro-desc{
+  animation: FadeInIntro 2s ease-in-out 1;
+}
+
 .carro-intro{
   border: 5px solid var(--primary);
   border-radius: 10px; 
   width: 50%;
+  animation: FadeInIntro 1s ease-in-out 1;
 }
 
 .button-contato-intro{
@@ -105,6 +114,7 @@ body {
   font-weight: bold;
   padding:20px;
   border-radius: 10;
+  animation: FadeInIntro 3.5s ease-in-out 1;
 }
 
 

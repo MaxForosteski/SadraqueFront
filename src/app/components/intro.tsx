@@ -4,8 +4,8 @@ export default function Intro() {
     return (
         <div className="flex intro">
             <div className="w-2/4 mt-10 text-intro">
-                <h1 className="mb-10 text-4xl"><span className="text-highlight">Sadraque Auto Center</span> – Cuidado e Qualidade para Seu Carro!</h1>
-                <p className="text-2xl mb-10">Manutenção, reparos e peças sob demanda com <span className="text-highlight">atendimento de confiança</span>. Tudo para manter <span className="text-highlight">seu carro seguro</span> e em <span className="text-highlight">perfeito estado</span>.</p>
+                <h1 className="mb-10 text-4xl intro-title"><span className="text-highlight">Sadraque Auto Center</span> – Cuidado e Qualidade para Seu Carro!</h1>
+                <p className="text-2xl mb-10 intro-desc">Manutenção, reparos e peças sob demanda com <span className="text-highlight">atendimento de confiança</span>. Tudo para manter <span className="text-highlight">seu carro seguro</span> e em <span className="text-highlight">perfeito estado</span>.</p>
                 <div className="whatsapp-button">
                     <a className="button-contato-intro" href="#"><Image src={"/images/whatsapp.png"} alt="Whatsapp" width={30} height={30} style={{marginRight:"10px"}}/>Entrar em contato</a>
                 </div>
