@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --background-page:#B0B0B0;
   --background-lighter:#E0E0E0;
   --background-light:#333333;
   --background: #1C1C1C;
@@ -11,15 +12,30 @@
   --primary: #D90429;
   --primary-light:#FF2020;
   --primary-dark:rgb(120, 11, 11);
+  --text-highlight:#32CD32;
+  --text-highlight-dark:#2EAD2E ;
 }
 
 .main{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background-page);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /*inicio navbar*/
 .navbar{
-  background-image: linear-gradient(to right, var(--background-dark), var(--background-light));
+  background-image: linear-gradient(to right, var(--background-dark), var(--background));
 }
 
 .navbar li{
@@ -32,10 +48,10 @@
 
 .navbar li:hover{
   background-color: var(--primary);
-  animation: FadeIn 0.09s ease-in-out 1;
+  animation: FadeInBackground 0.09s ease-in-out 1;
 }
 
-@keyframes FadeIn {
+@keyframes FadeInBackground {
   from {
     background-image: linear-gradient(to right, var(--primary-dark), var(--background));
   }
@@ -53,15 +69,68 @@
   list-style: none;
 }
 /*fim navbar*/
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+/*Inicio Intro*/
+
+.intro{
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-between;
 }
 
-body {
+.text-intro{
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.6;
+  flex-direction: column;
+  width: 40%;
+  margin: 30px;
 }
+
+.intro-title{
+  animation: FadeInIntro 0.5s ease-in-out 1;
+}
+
+.intro-desc{
+  animation: FadeInIntro 2s ease-in-out 1;
+}
+
+.carro-intro{
+  border: 5px solid var(--primary);
+  border-radius: 10px; 
+  width: 50%;
+  animation: FadeInIntro 1s ease-in-out 1;
+}
+
+.button-contato-intro{
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, var(--text-highlight-dark),var(--text-highlight));
+  width: 100%;
+  color: var(--background);
+  font-size: 18px;
+  font-weight: bold;
+  padding:20px;
+  border-radius: 10;
+  animation: FadeInIntro 3.5s ease-in-out 1;
+}
+
+
+@keyframes FadeInIntro{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+/*Fim intro*/
+
+/*Common inicio*/
+.text-highlight{
+  color: var(--text-highlight);
+  font-weight: bold;
+}
+/*Common fim*/
