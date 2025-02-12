@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background-page:#B0B0B0;
+  --background-page:#e9e9e9;
   --background-lighter:#E0E0E0;
   --background-light:#333333;
   --background: #1C1C1C;
@@ -14,6 +14,7 @@
   --primary-dark:rgb(120, 11, 11);
   --text-highlight:#32CD32;
   --text-highlight-dark:#2EAD2E ;
+  --gray:#b4b4b4;
 }
 
 .main{
@@ -130,12 +131,21 @@ body {
 /*Fim intro*/
 
 /*Inicio Servicos*/
-
+.services{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
 /*Fim Servicos*/
 
 /*Common inicio*/
 .text-highlight{
   color: var(--text-highlight);
   font-weight: bold;
+}
+
+.bg-gray{
+  background-color: var(--gray);
 }
 /*Common fim*/
