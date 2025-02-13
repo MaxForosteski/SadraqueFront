@@ -1,13 +1,14 @@
 "use client"
 
 import Image from "next/image"
+import { list } from "postcss"
 import { useEffect } from "react"
 
 export default function Services() {
     useEffect(() => {
-        const services : any = document.getElementById("services")
-        const observer = new IntersectionObserver((entries:any) => {
-            entries.forEach((entry: { isIntersecting: any; target: { style: { opacity: number; transform: string; transition: string } } }) => {
+        const services: any = document.getElementById("services")
+        const observer = new IntersectionObserver((entries: any) => {
+            entries.forEach((entry: { isIntersecting: boolean }) => {
                 if (entry.isIntersecting) {
                     services.classList.add("visivel");
                 }

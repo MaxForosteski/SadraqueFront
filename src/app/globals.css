@@ -150,7 +150,16 @@ body {
 /*Fim Servicos*/
 
 /*Inicio maplocal*/
+#mapa {
+  opacity: 0; /* Começa invisível */
+  transform: translateX(50px); /* Começa deslocado para baixo */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animação suave */
+}
 
+#mapa.visible {
+  opacity: 1; /* Fica visível */
+  transform: translateX(0); /* Volta à posição normal */
+}
 /*Fim maplocal*/
 
 /*Inicio Sobre nos*/
