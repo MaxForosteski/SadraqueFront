@@ -95,7 +95,7 @@ body {
 }
 
 .intro-desc{
-  animation: FadeInIntro 2s ease-in-out 1;
+  animation: FadeInIntro 1s ease-in-out 1;
 }
 
 .carro-intro{
@@ -116,7 +116,7 @@ body {
   font-weight: bold;
   padding:20px;
   border-radius: 10;
-  animation: FadeInIntro 3.5s ease-in-out 1;
+  animation: FadeInIntro 1s ease-in-out 1;
 }
 
 
@@ -148,6 +148,10 @@ body {
   transform: translateY(0); /* Volta à posição normal */
 }
 /*Fim Servicos*/
+
+/*Inicio Localizacao*/
+
+/*Fim Localizacao*/
 
 /*Common inicio*/
 .text-highlight{
