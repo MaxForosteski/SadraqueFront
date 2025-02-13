@@ -2,7 +2,8 @@ import Image from "next/image"
 
 export default function Aboutus() {
     return (
-        <div className="aboutus m-10">
+        <div id="sobrenos" className="aboutus m-10">
+            <a></a>
             <h1 className="text-3xl m-10 text-highlight">Sobre nós</h1>
             <p className="aboutus-desc text-xl">Na Sadraque Auto Center, cuidamos do seu veículo com qualidade e dedicação, garantindo um atendimento confiável e eficiente.
 

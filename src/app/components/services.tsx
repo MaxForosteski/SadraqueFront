@@ -16,7 +16,7 @@ export default function Services() {
         observer.observe(services)
     }, [])
     return (
-        <div className="services text-black text-4xl">
+        <div id="servicos" className="services text-black text-4xl">
             <h1 className="pl-10 mt-10">Serviços</h1>
 
             <div className="flex justify-center " id="services">
