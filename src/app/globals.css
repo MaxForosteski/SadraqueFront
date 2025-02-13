@@ -137,6 +137,16 @@ body {
   justify-content: center;
   padding: 10px;
 }
+#services {
+  opacity: 0; /* Começa invisível */
+  transform: translateY(50px); /* Começa deslocado para baixo */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animação suave */
+}
+
+#services.visivel {
+  opacity: 1; /* Fica visível */
+  transform: translateY(0); /* Volta à posição normal */
+}
 /*Fim Servicos*/
 
 /*Common inicio*/
