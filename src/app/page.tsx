@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import Intro from "./components/intro";
 import Services from "./components/services";
 import Maplocal from "./components/maplocal";
+import Aboutus from "./components/aboutus";
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
       <Intro />
       <Services />
       <div className="mt-10">
-        <div className="bg-grad-black">
+        <div className="bg-grad-black flex justify-between">
           <div className="w-1/2">
+          <Aboutus/>
           </div>
           <div className="w-1/2">
             <Maplocal />
