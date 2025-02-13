@@ -153,6 +153,12 @@ body {
 
 /*Fim maplocal*/
 
+/*Inicio Sobre nos*/
+.aboutus{
+  line-height: 1.6;
+}
+/*Fim Sobre nos*/
+
 /*Common inicio*/
 .text-highlight{
   color: var(--text-highlight);
@@ -161,5 +167,9 @@ body {
 
 .bg-gray{
   background-color: var(--gray);
+}
+
+.bg-grad-black{
+  background-image: linear-gradient(to right, var(--background-dark), var(--background));
 }
 /*Common fim*/

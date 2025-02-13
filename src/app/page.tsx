@@ -10,7 +10,18 @@ export default function Home() {
       <Navbar />
       <Intro />
       <Services />
-      <Maplocal />
+      <div className="mt-10">
+        <div className="bg-grad-black">
+          <div className="w-1/2">
+          </div>
+          <div className="w-1/2">
+            <Maplocal />
+          </div>
+        </div>
+
+
+      </div>
+
       <a href="https://www.flaticon.com/br" title="whatsapp ícones">Freepik - Flaticon</a>
     </div>
   );
