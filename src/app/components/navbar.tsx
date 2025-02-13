@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Navbar() {
     return (
-        <div className="navbar pt-10 pb-10 text-xl">
+        <div className="navbar text-xl">
             <ul>
                     <Image
                         src={"/images/Sadraque-logo.jpg"}
