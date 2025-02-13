@@ -2,7 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/navbar";
 import Intro from "./components/intro";
 import Services from "./components/services";
-import Localization from "./components/Localization";
+import Maplocal from "./components/maplocal";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <Intro />
       <Services />
-      <Localization />
+      <Maplocal />
       <a href="https://www.flaticon.com/br" title="whatsapp ícones">Freepik - Flaticon</a>
     </div>
   );
