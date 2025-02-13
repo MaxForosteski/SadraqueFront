@@ -110,7 +110,7 @@ body {
   display: flex;
   align-items: center;
   background-image: linear-gradient(to right, var(--text-highlight-dark),var(--text-highlight));
-  width: 100%;
+  width: auto;
   color: var(--background);
   font-size: 18px;
   font-weight: bold;
@@ -154,8 +154,8 @@ body {
 /*Fim maplocal*/
 
 /*Inicio Sobre nos*/
-.aboutus{
-  line-height: 1.6;
+.aboutus-desc{
+  line-height: 1.8;
 }
 /*Fim Sobre nos*/
 
