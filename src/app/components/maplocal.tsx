@@ -4,16 +4,19 @@ import { useEffect } from "react"
 
 export default function Maplocal() {
     useEffect(() => {
-        const mapa: any = document.getElementById("mapa")
-        const observer = new IntersectionObserver((entries: any) => {
-            entries.forEach((entry: { isIntersecting: Boolean }) => {
-                if (entry.isIntersecting) {
+        const mapa: HTMLDivElement | null = document.getElementById("mapa") as HTMLDivElement | null;
+        const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry: { isIntersecting: boolean }) => {
+                if (entry.isIntersecting && mapa) {
                     mapa.classList.add("visible")
                 }
             }
             )
         }, { threshold: 0.1 })
-        observer.observe(mapa)
+        if (mapa) {
+            observer.observe(mapa)
+        }
+
     }, [])
     return (
         <div className="maplocal text-highlight">
