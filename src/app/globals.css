@@ -172,4 +172,8 @@ body {
 .bg-grad-black{
   background-image: linear-gradient(to right, var(--background-dark), var(--background));
 }
+
+.bg-primary{
+  background-color: var(--primary);
+}
 /*Common fim*/
