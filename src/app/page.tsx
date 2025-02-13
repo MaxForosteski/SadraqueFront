@@ -4,6 +4,7 @@ import Intro from "./components/intro";
 import Services from "./components/services";
 import Maplocal from "./components/maplocal";
 import Aboutus from "./components/aboutus";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
 
       </div>
 
-      <a href="https://www.flaticon.com/br" title="whatsapp ícones">Freepik - Flaticon</a>
+      <Footer/>
     </div>
   );
 }
