@@ -77,10 +77,14 @@ body {
 .intro{
   background-color: var(--background);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
 }
 
 .text-intro{
+  position: absolute;
+  z-index: 10;
   color: var(--foreground);
   display: flex;
   justify-content: center;
@@ -99,16 +103,6 @@ body {
   animation: FadeInIntro 1s ease-in-out 1;
 }
 
-.home{
-  width: 100%;
-  max-width: 600px;
-  overflow:hidden;
-  position: relative;
-  margin: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
 .carro-intro{
   /*border: 5px solid var(--primary);
   border-radius: 10px; 
@@ -117,12 +111,11 @@ body {
   margin: 10px;*/
   display: flex;
   width: 300%;
-  animation: slide 9s infinite;
 }
 
 .img-carro-intro{
-  width: 100vw;
-  height: auto;
+  width: 120vw;
+  height: 30rem;
 }
 
 .button-contato-intro{
