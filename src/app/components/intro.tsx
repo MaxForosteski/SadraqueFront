@@ -1,6 +1,35 @@
+"use client"
+
 import Image from "next/image"
+import React, { useEffect } from "react"
 
 export default function Intro() {
+    const [indexImage, setIndexImage] = React.useState(0);
+    const [ImageSrc, setImageSrc] = React.useState("/images/carro-intro.jpg");
+    const [isFadingOut, setIsFadingOut] = React.useState(false); // Estado de animação
+
+    useEffect(() => {
+        const ImageLoop = setInterval(() => {
+            // Inicia a animação de saída
+            setIsFadingOut(true);
+
+            setTimeout(() => {
+                // Troca a imagem após o fade-out
+                setIndexImage((prevIndex) => (prevIndex + 1) % 3);
+
+                setImageSrc(() => {
+                    if (indexImage === 0) return "/images/carro-intro2.jpg";
+                    if (indexImage === 1) return "/images/carro-intro3.jpg";
+                    return "/images/carro-intro.jpg";
+                });
+
+                // Espera um pequeno tempo antes de voltar a opacidade
+                setTimeout(() => setIsFadingOut(false), 500);
+            }, 500); // Tempo de fade-out antes de trocar a imagem
+        }, 5000);
+
+        return () => clearInterval(ImageLoop);
+    }, [indexImage])
     return (
         <div id="home" className="flex intro">
             <div className="mt-10 text-intro">
@@ -13,25 +42,12 @@ export default function Intro() {
             <div className="carro-intro">
 
                 <Image
-                    src={"/images/carro-intro.jpg"}
+                    src={ImageSrc}
                     alt="Carro"
-                    className="img-carro-intro"
+                    className={`img-carro-intro transition-opacity duration-300 ${isFadingOut ? "opacity-0" : "opacity-100"}`}
                     width={2550}
                     height={2550}
-                />
-                <Image
-                    src={"/images/carro-intro2.jpg"}
-                    alt="Carro2"
-                    className="img-carro-intro"
-                    width={2550}
-                    height={2550}
-                />
-                <Image
-                    src={"/images/carro-intro3.jpg"}
-                    alt="Carro3"
-                    className="img-carro-intro"
-                    width={2550}
-                    height={2550}
+                    priority={true}
                 />
             </div>
         </div>
