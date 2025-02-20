@@ -116,8 +116,9 @@ body {
 }
 
 .img-carro-intro{
-  width: 120vw;
+  width: 100vw;
   height: auto;
+  object-fit: cover;
 }
 
 .button-contato-intro{
