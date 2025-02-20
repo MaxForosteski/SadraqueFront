@@ -44,7 +44,7 @@ export default function Intro() {
                 <Image
                     src={ImageSrc}
                     alt="Carro"
-                    className={`img-carro-intro transition-opacity duration-300 ${isFadingOut ? "opacity-0" : "opacity-100"}`}
+                    className={`img-carro-intro transition-opacity duration-300 ${isFadingOut ? "opacity-0" : "opacity-30"}`}
                     width={2550}
                     height={2550}
                     priority={true}
