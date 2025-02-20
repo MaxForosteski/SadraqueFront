@@ -79,7 +79,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 80vh;
+  width: fit-content;
 }
 
 .text-intro{
@@ -111,6 +112,7 @@ body {
   margin: 10px;*/
   display: flex;
   width: 300%;
+  height: inherit;
 }
 
 .img-carro-intro{
