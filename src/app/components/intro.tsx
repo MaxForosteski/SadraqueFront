@@ -41,8 +41,9 @@ export default function Intro() {
             </Head>
             <div id="home" className="flex intro">
                 <div className="mt-10 text-intro">
-                    <h1 className="mb-10 text-4xl intro-title"><span className="text-highlight">Sadraque Auto Center</span> – Cuidado e Qualidade para Seu Carro!</h1>
-                    <p className="text-2xl mb-10 intro-desc">Manutenção, reparos e peças sob demanda com <span className="text-highlight">atendimento de confiança</span>. Tudo para manter <span className="text-highlight">seu carro seguro</span> e em <span className="text-highlight">perfeito estado</span>.</p>
+                    <h1 className="mb-10 text-6xl intro-title name-highlight">Sadraque Auto Center</h1>
+                    <p className="text-xl intro-desc">Manutenção, reparos e peças sob demanda com <span className="text-highlight">atendimento de confiança</span>. </p>
+                    <p className="text-xl mb-10 intro-desc">Possuimos baterias <span className="text-highlight">Moura, Zetta, Pioneiro, entre outras</span>.</p>
                     <div className="whatsapp-button">
                         <a className="button-contato-intro" href="#"><Image src={"/images/whatsapp.png"} alt="Whatsapp" width={30} height={30} style={{ marginRight: "10px" }} />Entrar em contato</a>
                     </div>
@@ -52,7 +53,7 @@ export default function Intro() {
                     <Image
                         src={ImageSrc}
                         alt="Carro"
-                        className={`img-carro-intro transition-opacity duration-300 ${isFadingOut ? "opacity-0" : "opacity-30"}`}
+                        className={`img-carro-intro transition-opacity duration-300 ${isFadingOut ? "opacity-0" : "opacity-15"}`}
                         width={2550}
                         height={2550}
                         priority={true}
