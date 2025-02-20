@@ -9,7 +9,7 @@
   --background: #1C1C1C;
   --background-dark:#000000;
   --foreground: #ffffff;
-  --primary: #D90429;
+  --primary: #E60026;
   --primary-light:#FF2020;
   --primary-dark:rgb(120, 11, 11);
   --text-highlight:#32CD32;
@@ -19,6 +19,7 @@
 
 .main{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -76,34 +77,48 @@ body {
 .intro{
   background-color: var(--background);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: fit-content;
 }
 
 .text-intro{
+  position: absolute;
+  z-index: 10;
   color: var(--foreground);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   line-height: 1.6;
   flex-direction: column;
-  width: 40%;
+  width: 60%;
   margin: 30px;
 }
 
 .intro-title{
   animation: FadeInIntro 0.5s ease-in-out 1;
+  background-color: var(--background);
+  border-radius: 10px;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .intro-desc{
   animation: FadeInIntro 1s ease-in-out 1;
+  text-align: center;
 }
 
 .carro-intro{
-  border: 5px solid var(--primary);
-  border-radius: 10px; 
-  width: 45%;
-  animation: FadeInIntro 1s ease-in-out 1;
-  margin: 10px;
+  display: flex;
+  width: 300%;
+  height: inherit;
+}
+
+.img-carro-intro{
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
 }
 
 .button-contato-intro{
@@ -119,6 +134,12 @@ body {
   animation: FadeInIntro 1s ease-in-out 1;
 }
 
+@keyframes slide {
+  0%{transform: translateX(0%);}
+  33%{transform: translateX(-100%);}
+  66%{transform: translateX(-200%);}
+  100%{transform: translateX(0%);}
+}
 
 @keyframes FadeInIntro{
   from{
@@ -174,6 +195,11 @@ body {
   font-weight: bold;
 }
 
+
+.name-highlight{
+  color: var(--primary);
+  font-weight: bold;
+}
 .bg-gray{
   background-color: var(--gray);
 }
