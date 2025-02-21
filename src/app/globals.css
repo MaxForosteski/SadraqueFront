@@ -168,6 +168,35 @@ body {
   opacity: 1; /* Fica visível */
   transform: translateY(0); /* Volta à posição normal */
 }
+
+.maintenance:hover{
+  background-color: var(--primary);
+  color: var(--foreground);
+  animation: FadeInServices 0.3s ease-in-out 1;
+}
+
+.security:hover{
+  background-color: var(--primary);
+  color: var(--foreground);
+  animation: FadeInServices 0.3s ease-in-out 1;
+}
+
+.revision:hover{
+  background-color: var(--primary);
+  color: var(--foreground);
+  animation: FadeInServices 0.3s ease-in-out 1;
+}
+
+@keyframes FadeInServices {
+  from {
+    background-color: var(--gray);
+    color:var(--background);
+  }
+  to {
+    background-color: var(--primary);
+    color: var(--foreground);
+  }
+}
 /*Fim Servicos*/
 
 /*Inicio maplocal*/
