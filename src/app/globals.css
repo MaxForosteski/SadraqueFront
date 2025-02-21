@@ -97,7 +97,7 @@ body {
 }
 
 .intro-title{
-  animation: FadeInIntro 0.5s ease-in-out 1;
+  animation: FadeIn 0.5s ease-in-out 1;
   background-color: var(--background);
   border-radius: 10px;
   padding: 5px;
@@ -105,7 +105,7 @@ body {
 }
 
 .intro-desc{
-  animation: FadeInIntro 1s ease-in-out 1;
+  animation: FadeIn 1s ease-in-out 1;
   text-align: center;
 }
 
@@ -131,24 +131,10 @@ body {
   font-weight: bold;
   padding:20px;
   border-radius: 10;
-  animation: FadeInIntro 1s ease-in-out 1;
+  animation: FadeIn 1s ease-in-out 1;
 }
 
-@keyframes slide {
-  0%{transform: translateX(0%);}
-  33%{transform: translateX(-100%);}
-  66%{transform: translateX(-200%);}
-  100%{transform: translateX(0%);}
-}
 
-@keyframes FadeInIntro{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
 /*Fim intro*/
 
 /*Inicio Servicos*/
@@ -169,11 +155,31 @@ body {
   transform: translateY(0); /* Volta à posição normal */
 }
 
+
 .maintenance:hover{
   background-color: var(--primary);
   color: var(--foreground);
   animation: FadeInServices 0.3s ease-in-out 1;
 }
+
+.maintenance-popup{
+  position:absolute;
+  top:100%;
+  padding:10px;
+  background-color: var(--gray);
+  border-radius: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  width: 27%;
+  opacity:0;
+  transition: FadeIn 0.5s ease-in-out;
+}
+
+.maintenance-popup.visible{
+  opacity:1;
+}
+
 
 .security:hover{
   background-color: var(--primary);
@@ -224,7 +230,6 @@ body {
   font-weight: bold;
 }
 
-
 .name-highlight{
   color: var(--primary);
   font-weight: bold;
@@ -239,5 +244,14 @@ body {
 
 .bg-primary{
   background-color: var(--primary);
+}
+
+@keyframes FadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 /*Common fim*/
