@@ -1,25 +1,9 @@
 "use client"
 
 import Image from "next/image"
-import React, { useCallback, useEffect } from "react"
+import React, { useEffect } from "react"
 
 export default function Services() {
-
-    /*const maintenance = document.getElementById("maintenance") as HTMLDivElement | null;
-    const maintenance_popup = document.getElementById("maintenance-popup") as HTMLDivElement | null;
-
-    const OnMouseMaintenance = useCallback((event: MouseEvent) => {
-        if (maintenance_popup) {
-            maintenance_popup.classList.add("visible")
-        }
-    },[])
-
-    const OutMouseMaintenance = useCallback((event: MouseEvent) => {
-        if (maintenance_popup) {
-            maintenance_popup.classList.remove("visible")
-        }
-    },[])*/
-
     useEffect(() => {
         const services: HTMLDivElement | null = document.getElementById("services") as HTMLDivElement | null
         const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
@@ -33,25 +17,11 @@ export default function Services() {
             observer.observe(services)
         }
 
-
-        /*
-        if(maintenance){
-            maintenance.addEventListener("mouseleave", OutMouseMaintenance);
-            maintenance.addEventListener("mouseenter", OnMouseMaintenance);
-        }
-
-        return () => {
-            if(maintenance){
-                maintenance.removeEventListener("mouseenter", OnMouseMaintenance);
-                maintenance.removeEventListener("mouseleave", OutMouseMaintenance);
-            }
-        }
-        */
     }, []);
-
+    
     return (
         <div id="servicos" className="services text-black text-4xl">
-            <h1 className="pl-10 mt-10">Serviços</h1>
+            <h1 className="pl-10 text-7xl mt-10">Serviços</h1>
 
             <div className="flex justify-center" id="services">
                 <div className="w-10/12 p-5 flex justify-center mt-10 rounded-3xl">

@@ -121,18 +121,7 @@ body {
   object-fit: cover;
 }
 
-.button-contato-intro{
-  display: flex;
-  align-items: center;
-  background-image: linear-gradient(to right, var(--text-highlight-dark),var(--text-highlight));
-  width: auto;
-  color: var(--background);
-  font-size: 18px;
-  font-weight: bold;
-  padding:20px;
-  border-radius: 10;
-  animation: FadeIn 1s ease-in-out 1;
-}
+
 
 
 /*Fim intro*/
@@ -246,6 +235,7 @@ body {
 #mapa {
   opacity: 0; /* Começa invisível */
   transform: translateX(50px); /* Começa deslocado para baixo */
+  width: 100%;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animação suave */
 }
 
@@ -281,6 +271,19 @@ body {
 
 .bg-primary{
   background-color: var(--primary);
+}
+
+.button-contato-intro{
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, var(--text-highlight-dark),var(--text-highlight));
+  width: 20rem;
+  color: var(--background);
+  font-size: 22px;
+  font-weight: bold;
+  padding:20px;
+  border-radius: 10;
+  animation: FadeIn 1s ease-in-out 1;
 }
 
 @keyframes FadeIn{
