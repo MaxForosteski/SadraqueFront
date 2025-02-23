@@ -97,7 +97,7 @@ body {
 }
 
 .intro-title{
-  animation: FadeInIntro 0.5s ease-in-out 1;
+  animation: FadeIn 0.5s ease-in-out 1;
   background-color: var(--background);
   border-radius: 10px;
   padding: 5px;
@@ -105,7 +105,7 @@ body {
 }
 
 .intro-desc{
-  animation: FadeInIntro 1s ease-in-out 1;
+  animation: FadeIn 1s ease-in-out 1;
   text-align: center;
 }
 
@@ -121,34 +121,9 @@ body {
   object-fit: cover;
 }
 
-.button-contato-intro{
-  display: flex;
-  align-items: center;
-  background-image: linear-gradient(to right, var(--text-highlight-dark),var(--text-highlight));
-  width: auto;
-  color: var(--background);
-  font-size: 18px;
-  font-weight: bold;
-  padding:20px;
-  border-radius: 10;
-  animation: FadeInIntro 1s ease-in-out 1;
-}
 
-@keyframes slide {
-  0%{transform: translateX(0%);}
-  33%{transform: translateX(-100%);}
-  66%{transform: translateX(-200%);}
-  100%{transform: translateX(0%);}
-}
 
-@keyframes FadeInIntro{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
+
 /*Fim intro*/
 
 /*Inicio Servicos*/
@@ -168,12 +143,99 @@ body {
   opacity: 1; /* Fica visível */
   transform: translateY(0); /* Volta à posição normal */
 }
+
+
+.maintenance:hover{
+  background-color: var(--primary);
+  color: var(--foreground);
+  animation: FadeInServices 0.3s ease-in-out 1;
+}
+
+.maintenance-popup{
+  position:absolute;
+  top:100%;
+  padding:10px;
+  background-color: var(--gray);
+  border-radius: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  width: 27%;
+  opacity:0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.maintenance-popup.visible{
+  opacity:1;
+  z-index: 10;
+}
+
+.security:hover{
+  background-color: var(--primary);
+  color: var(--foreground);
+  animation: FadeInServices 0.3s ease-in-out 1;
+}
+
+.security-popup{
+  position:absolute;
+  top:100%;
+  padding:10px;
+  background-color: var(--gray);
+  border-radius: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  width: 27%;
+  opacity:0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.security-popup.visible{
+  opacity:1;
+  z-index: 10;
+}
+
+.revision:hover{
+  background-color: var(--primary);
+  color: var(--foreground);
+  animation: FadeInServices 0.3s ease-in-out 1;
+}
+
+.revision-popup{
+  position:absolute;
+  top:100%;
+  padding:10px;
+  background-color: var(--gray);
+  border-radius: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  width: 27%;
+  opacity:0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.revision-popup.visible{
+  opacity:1;
+}
+
+@keyframes FadeInServices {
+  from {
+    background-color: var(--gray);
+    color:var(--background);
+  }
+  to {
+    background-color: var(--primary);
+    color: var(--foreground);
+  }
+}
 /*Fim Servicos*/
 
 /*Inicio maplocal*/
 #mapa {
   opacity: 0; /* Começa invisível */
   transform: translateX(50px); /* Começa deslocado para baixo */
+  width: 100%;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animação suave */
 }
 
@@ -195,7 +257,6 @@ body {
   font-weight: bold;
 }
 
-
 .name-highlight{
   color: var(--primary);
   font-weight: bold;
@@ -210,5 +271,27 @@ body {
 
 .bg-primary{
   background-color: var(--primary);
+}
+
+.button-contato-intro{
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, var(--text-highlight-dark),var(--text-highlight));
+  width: 20rem;
+  color: var(--background);
+  font-size: 22px;
+  font-weight: bold;
+  padding:20px;
+  border-radius: 10;
+  animation: FadeIn 1s ease-in-out 1;
+}
+
+@keyframes FadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 /*Common fim*/

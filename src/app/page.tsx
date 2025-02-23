@@ -12,19 +12,12 @@ export default function Home() {
       <Intro />
       <Services />
       <div className="mt-10">
-        <div className="bg-grad-black flex justify-between">
-          <div className="w-1/2">
-          <Aboutus/>
-          </div>
-          <div className="w-1/2">
-            <Maplocal />
-          </div>
+        <div className="bg-grad-black flex flex-col justify-between">
+          <Aboutus />
+          <Maplocal />
         </div>
-
-
       </div>
-
-      <Footer/>
+      <Footer />
     </div>
   );
 }
