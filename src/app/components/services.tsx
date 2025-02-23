@@ -21,7 +21,7 @@ export default function Services() {
     
     return (
         <div id="servicos" className="services text-black text-4xl">
-            <h1 className="pl-10 text-7xl mt-10">Serviços</h1>
+            <h1 className="pl-10 text-5xl mt-10">Serviços</h1>
 
             <div className="flex justify-center" id="services">
                 <div className="w-10/12 p-5 flex justify-center mt-10 rounded-3xl">
@@ -37,7 +37,7 @@ export default function Services() {
                             <h3 className="font-bold mt-5">Manutenção Completa</h3>
                             <p className="mt-5">Motor, câmbio e injeção eletrônica.</p>
                         </div>
-                        <div id="maintenance-popup" className="maintenance-popup text-lg">
+                        <div id="maintenance-popup" className="maintenance-popup text-xl">
                             <p>Manutenção Geral 🚗🔧</p>
                             <p>Inclui:</p>
                             <p>✅ Revisão e manutenção do motor</p>
@@ -60,8 +60,8 @@ export default function Services() {
                             <h3 className="font-bold mt-5">Segurança e Conforto</h3>
                             <p className="mt-5">Freios, suspensão e direção.</p>
                         </div>
-                        <div id="security-popup" className="security-popup text-lg">
-                            <p>🔧 Segurança e Conforto para o Seu Veículo 🚗💨</p>
+                        <div id="security-popup" className="security-popup text-xl">
+                            <p>Segurança e Conforto para o Seu Veículo 🚗💨</p>
 
                             <p>✔ Revisão completa das linhas hidráulicas de freio</p>
                             <p>✔ Inspeção e troca de lonas, pastilhas e discos de freio</p>
@@ -84,8 +84,8 @@ export default function Services() {
                             <p className="mt-5">Mais desempenho e durabilidade.</p>
                         </div>
 
-                        <div className="revision-popup text-lg" id="revision-popup">
-                            <p>🔧 Troca de Óleo, Fluidos e Revisões Completa! 🚗💨</p>
+                        <div className="revision-popup text-xl" id="revision-popup">
+                            <p>Troca de Óleo, Fluidos e Revisões Completa! 🚗💨</p>
 
                             <p>✅ Troca de óleo: motor, câmbio e direção</p>
                             <p>✅ Substituição dos fluidos: freio e arrefecimento (radiador)</p>

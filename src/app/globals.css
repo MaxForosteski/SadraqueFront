@@ -258,7 +258,7 @@ body {
 }
 
 .name-highlight{
-  color: var(--primary);
+  color: var(--primary-light);
   font-weight: bold;
 }
 .bg-gray{
