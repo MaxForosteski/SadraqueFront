@@ -280,6 +280,7 @@ body {
 .button-contato-intro{
   display: flex;
   align-items: center;
+  justify-content: center;
   background-image: linear-gradient(to right, var(--text-highlight-dark),var(--text-highlight));
   width: 20rem;
   color: var(--background);
