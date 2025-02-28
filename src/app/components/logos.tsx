@@ -8,18 +8,19 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 
 export default function Logos() {
+    
     return (
 
-        <>
+        <div id="logos">
             <div className="text-black text-4xl flex justify-center mt-10 pl-10">Marcas que atendemos</div>
-            <div className="logos-carrossel flex justify-center items-center m-10">
-                <div className="w-7/12">
+            <div className="logos-carrossel w-full flex justify-center items-center m-10">
+                <div className="w-9/12 bg-neutral-300 rounded-xl">
                     <Swiper
                         modules={[Navigation, Pagination, Autoplay]}
                         spaceBetween={0}
-                        slidesPerView={3}
-                        // autoplay={{ delay: 3000 }}
-                        className="w-full max-w-[800px] mx-auto"
+                        slidesPerView={4}
+                        autoplay={{ delay: 1500 }}
+                        className="w-full mx-auto"
                     >
                         <div className="flex justify-center items-center">
                             <SwiperSlide>
@@ -30,7 +31,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-imag min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-imag min-w-[200px] min-h-[100px] max-w-[190px] max-h-[200px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -43,7 +44,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[240px] mt-5 min-h-[130px] max-w-[240px] max-h-[130px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -57,7 +58,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[200px] min-h-[90px] max-w-[200px] max-h-[90px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -69,7 +70,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "250px", height: "250px" }}
-                                        className="carrossel-image min-w-[200px] min-h-[200px] max-w-[200px] max-h-[150px]"
+                                        className="carrossel-image min-w-[150px] min-h-[140px] max-w-[150px] max-h-[140px]"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -81,7 +82,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[130px] min-h-[100px] max-w-[130px] max-h-[200px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -93,7 +94,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[230px] min-h-[85px] max-w-[230px] max-h-[85px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -105,7 +106,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[140px] min-h-[110px] max-w-[140px] max-h-[110px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -117,7 +118,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[190px] min-h-[120px] max-w-[190px] max-h-[120px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -129,7 +130,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[185px] min-h-[90px] max-w-[185px] max-h-[90px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -141,7 +142,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[160px] min-h-[140px] max-w-[160px] max-h-[140px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -153,7 +154,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[180px] min-h-[130px] max-w-[180px] max-h-[130px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -165,7 +166,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[160px] min-h-[120px] max-w-[160px] max-h-[120px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -177,7 +178,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[175px] min-h-[130px] max-w-[175px] max-h-[130px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -189,7 +190,7 @@ export default function Logos() {
                                         width={500}
                                         height={500}
                                         style={{ width: "100%" }}
-                                        className="carrossel-image min-w-[200px] min-h-[100px] max-w-[200px] max-h-[200px] object-cover"
+                                        className="carrossel-image min-w-[180px] min-h-[150px] max-w-[180px] max-h-[150px] object-cover"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -198,6 +199,6 @@ export default function Logos() {
                     </Swiper>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
