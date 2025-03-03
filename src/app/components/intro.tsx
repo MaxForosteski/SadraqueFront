@@ -5,7 +5,7 @@ import Image from "next/image"
 import React, { useEffect } from "react"
 
 
-export default function Intro() {
+export default function Intro({ isMobile }: { isMobile: boolean }) {
     const [indexImage, setIndexImage] = React.useState(0);
     const [ImageSrc, setImageSrc] = React.useState("/images/carro-intro.jpg");
     const [isFadingOut, setIsFadingOut] = React.useState(false); // Estado de animação
@@ -41,8 +41,8 @@ export default function Intro() {
             </Head>
             <div id="home" className="flex intro">
                 <div className="mt-10 text-intro">
-                    <h1 className="mb-10 text-6xl intro-title name-highlight">Sadraque Auto Center</h1>
-                    <p className="text-xl intro-desc">Manutenção, reparos e peças sob demanda com <span className="text-highlight">atendimento de confiança</span>. </p>
+                    {isMobile?<></>:<h1 className="mb-10 text-6xl intro-title name-highlight">Sadraque Auto Center</h1>}
+                    <p className="text-xl intro-desc mb-10">Manutenção, reparos e peças sob demanda com <span className="text-highlight">atendimento de confiança</span>. </p>
                     <p className="text-xl mb-10 intro-desc">Possuimos baterias <span className="text-highlight">Moura, Zetta, Pioneiro, entre outras</span>.</p>
                     <div className="whatsapp-button">
                         <a className="button-contato-intro" href="#"><Image src={"/images/whatsapp.png"} alt="Whatsapp" width={30} height={30} style={{ marginRight: "10px" }} />Entrar em contato</a>
