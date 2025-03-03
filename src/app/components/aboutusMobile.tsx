@@ -4,7 +4,7 @@ export default function AboutusMobile() {
     return (
         <div id="sobrenos" className="aboutus m-10 ">
             <div className="">
-                <div className="flex flex-col justify-around m-10">
+                <div className="flex flex-col justify-around">
                     <h1 className="text-7xl text-highlight text-center">Sobre nós</h1>
                     <div className="flex justify-center justify-around">
                         <p className="aboutus-desc text-2xl flex items-center text-justify mt-10">Aqui cuidamos do seu veículo com qualidade e dedicação, oferecendo atendimento confiável e eficiente. Nosso compromisso é garantir sua segurança e a de todos os passageiros.</p>
