@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 import Logos from "./components/logos";
 import { useState , useEffect } from "react";
 import ServicesMobile from "./components/servicesMobile";
+import AboutusMobile from "./components/aboutusMobile";
 
 
 export default function Home() {
@@ -42,7 +43,7 @@ export default function Home() {
       {isMobile?<ServicesMobile/>:<Services />}
       <div className="mt-10">
         <div className="bg-grad-black flex flex-col justify-between">
-          <Aboutus />
+          {isMobile?<AboutusMobile/>:<Aboutus />}
           <Maplocal />
         </div>
       </div>

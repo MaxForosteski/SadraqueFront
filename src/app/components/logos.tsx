@@ -12,7 +12,7 @@ export default function Logos({ ReactiveFlags }: { ReactiveFlags: { isMobile: bo
     return (
         <>
             <div className="text-black text-4xl text-center mt-10">Marcas que atendemos</div>
-            <div className="logos-carrossel w-full flex justify-center items-center mt-10">
+            <div className="logos-carrossel w-full flex flex-col items-center items-center mt-10">
                 <div className="w-9/12 bg-neutral-300 rounded-xl">
                     {
                         ReactiveFlags.isNotebook ?
@@ -570,6 +570,10 @@ export default function Logos({ ReactiveFlags }: { ReactiveFlags: { isMobile: bo
 
                             </Swiper>
                             : <></>}
+
+                </div>
+                <div className="mt-10 flex justify-center">
+                    <a className="button-contato-intro flex justify-center" href="#"><Image src={"/images/whatsapp.png"} alt="Whatsapp" width={30} height={30} style={{ marginRight: "10px" }} />Entrar em contato</a>
                 </div>
             </div>
         </>
