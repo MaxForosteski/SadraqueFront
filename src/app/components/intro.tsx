@@ -45,7 +45,7 @@ export default function Intro({ isMobile }: { isMobile: boolean }) {
                     <p className="text-xl intro-desc mb-10">Manutenção, reparos e peças sob demanda com <span className="text-highlight">atendimento de confiança</span>. </p>
                     <p className="text-xl mb-10 intro-desc">Possuimos baterias <span className="text-highlight">Moura, Zetta, Pioneiro, entre outras</span>.</p>
                     <div className="whatsapp-button">
-                        <a className="button-contato-intro" href="#"><Image src={"/images/whatsapp.png"} alt="Whatsapp" width={30} height={30} style={{ marginRight: "10px" }} />Entrar em contato</a>
+                        <a className="button-contato-intro" href="https://wa.me/5549999012693"><Image src={"/images/whatsapp.png"} alt="Whatsapp" width={30} height={30} style={{ marginRight: "10px" }} />Entrar em contato</a>
                     </div>
                 </div>
                 <div className="carro-intro">

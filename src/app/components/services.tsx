@@ -95,11 +95,6 @@ export default function Services() {
 
                     </div>
                 </div>
-
-                <div className="mt-10 flex justify-center">
-                    <a className="button-contato-intro flex justify-center" href="#"><Image src={"/images/whatsapp.png"} alt="Whatsapp" width={30} height={30} style={{ marginRight: "10px" }} />Entrar em contato</a>
-                </div>
-
             </div>
         </div>
     )

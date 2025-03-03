@@ -68,7 +68,7 @@ export default function AboutusMobile() {
 
 
             <div className="mt-10 flex justify-center">
-                <a className="button-contato-intro flex justify-center" href="#"><Image src={"/images/whatsapp.png"} alt="Whatsapp" width={30} height={30} style={{ marginRight: "10px" }} />Entrar em contato</a>
+                <a className="button-contato-intro flex justify-center" href="https://wa.me/5549999012693"><Image src={"/images/whatsapp.png"} alt="Whatsapp" width={30} height={30} style={{ marginRight: "10px" }} />Entrar em contato</a>
             </div>
         </div >
     )
