@@ -8,6 +8,7 @@ import Aboutus from "./components/aboutus";
 import Footer from "./components/footer";
 import Logos from "./components/logos";
 import { useState , useEffect } from "react";
+import ServicesMobile from "./components/servicesMobile";
 
 
 export default function Home() {
@@ -38,7 +39,7 @@ export default function Home() {
       <Navbar isMobile = {isMobile} />
       <Intro isMobile = {isMobile}/>
       <Logos ReactiveFlags = {{isMobile,isNotebook}} />
-      <Services />
+      {isMobile?<ServicesMobile/>:<Services />}
       <div className="mt-10">
         <div className="bg-grad-black flex flex-col justify-between">
           <Aboutus />

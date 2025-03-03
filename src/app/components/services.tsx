@@ -18,11 +18,10 @@ export default function Services() {
         }
 
     }, []);
-    
+
     return (
         <div id="servicos" className="services text-black text-4xl">
             <h1 className="pl-10 text-5xl mt-10">Serviços</h1>
-
             <div className="flex justify-center" id="services">
                 <div className="w-10/12 p-5 flex justify-center mt-10 rounded-3xl">
                     <div className="maintenance-group">
